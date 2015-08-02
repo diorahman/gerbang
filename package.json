@@ -13,5 +13,8 @@
     "amqp-rpc": "0.0.8",
     "hapi": "^8.8.1",
     "hyperquest": "^1.2.0"
+  },
+  "devDependencies": {
+    "pubnub-rickshaw-memory": "^0.1.3"
   }
 }

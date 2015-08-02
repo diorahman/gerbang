@@ -12,7 +12,7 @@ module.exports = function() {
       if (err)
         return cb(err.message);
       cb(data);
-    })
+    });
   });
 }
 

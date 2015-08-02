@@ -2,6 +2,10 @@ var Hapi = require('hapi');
 var pay = require('./pay');
 var sink = require('./pay-sink');
 var server = new Hapi.Server();
+
+var pnrickmem = require('pubnub-rickshaw-memory');
+pnrickmem.init({dev: true});
+
 server.connection({
   port: process.env.PORT || 3000
 });
