@@ -1,0 +1,16 @@
+{
+  "name": "gerbang",
+  "version": "1.0.0",
+  "description": "An RPC-based ops server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dhi Aurrahman <diorahman@rockybars.com>",
+  "license": "MIT",
+  "dependencies": {
+    "amqp-rpc": "0.0.8",
+    "hapi": "^8.8.1",
+    "hyperquest": "^1.2.0"
+  }
+}
