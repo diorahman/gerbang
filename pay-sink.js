@@ -6,9 +6,9 @@ module.exports = function() {
       url: 'amqp://localhost:5672'
     });
 
-  rpc.on('pay', function(param, cb){
+  rpc.on('pay', function(param, cb) {
     // we can add level of asynchronousity by using node-worker-farm
-    payWorker(function(err, data){
+    payWorker(param, function(err, data){
       if (err)
         return cb(err.message);
       cb(data);
