@@ -6,6 +6,8 @@ server.connection({
   port: process.env.PORT || 3000
 });
 
+var count = 0;
+
 // a dummy endpoint
 server.route({
   method: 'POST',
@@ -13,6 +15,7 @@ server.route({
   handler: function(request, reply) {
     // send request to RPC-enabled service
     // todo validation
+    console.log(count++);
     pay(request, reply);
   }
 })
